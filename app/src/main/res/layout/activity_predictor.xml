@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".Predictor">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:weightSum="12"
+        >
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="1200dp"
+            android:layout_marginBottom="80dp"
+            android:layout_weight="12"
+            android:background="#fff"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="true"
+            android:padding="1dp"
+            android:rowCount="5">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/depressioncard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="4"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_row="0"
+                android:layout_rowWeight="6"
+                android:onClick="onClick1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="50dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/depression"
+                        >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/deptxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="DEPRESSION"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/anxietycard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="4"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="6"
+                android:onClick="onClick2"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="50dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/anxietyfinal" />
+
+                    <TextView
+                        android:id="@+id/anxietytxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ANXIETY"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/internetaddictcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="5"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="6"
+                android:onClick="onClick3"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="50dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/internet1" />
+
+                    <TextView
+                        android:id="@+id/internettxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="INTERNET ADDICTION"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/aggressioncard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="5"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="6"
+                android:onClick="onClick4"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="50dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/aggression" />
+
+                    <TextView
+                        android:id="@+id/aggressiontxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="AGGRESSION"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gameaddictcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="5"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="6"
+                android:onClick="onClick5"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="50dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/gameaddict" />
+
+                    <TextView
+                        android:id="@+id/gameaddicttxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="GAME ADDICTION"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psychosiscard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="2"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_row="0"
+                android:layout_rowWeight="6"
+                android:onClick="onClick6"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="50dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/psychosisf" />
+
+                    <TextView
+                        android:id="@+id/psychosistxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="PSYCHOSIS"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/maleaggcard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="4"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="6"
+                android:onClick="onClick7"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="50dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/maleaggressionfinal" />
+
+                    <TextView
+                        android:id="@+id/maleaggtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="MALE AGGRESSION"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/toxiccard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="4"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="6"
+                android:onClick="onClick8"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="50dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/toxicworkplace" />
+
+                    <TextView
+                        android:id="@+id/toxictxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TOXIC WORKPLACE"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/borderlinecard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="4"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="6"
+                android:onClick="onClick9"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="50dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/borderline" />
+
+                    <TextView
+                        android:id="@+id/borderlinetxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="BORDERLINE PERSONALITY DISORDER"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/paniccard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="4"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="6"
+                android:onClick="onClick10"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="50dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="1dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/panic" />
+
+                    <TextView
+                        android:id="@+id/panictxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="PANIC ATTACK"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/designbtns"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>
+

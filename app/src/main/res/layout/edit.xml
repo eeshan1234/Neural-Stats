@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutr1"
+            android:orientation="vertical"
+            android:padding="8sp">
+
+            <TextView
+                style="@style/widget"
+                android:id="@+id/texttitle"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="Title"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                />
+
+            <EditText
+                android:id="@+id/title"
+                style="@style/widget"
+                android:layout_height="46dp"
+                android:layout_below="@+id/texttitle"
+                android:layout_marginTop="14dp"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="150dp"
+                android:orientation="horizontal"
+                android:paddingTop="8sp">
+
+                <CheckBox
+                    android:id="@+id/alarm_checkbox"
+                    android:layout_width="8dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="3"
+                    android:text="Alarm"
+                    android:background="@color/white"
+                    />
+
+                <Spinner
+                    android:id="@+id/occurence_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15sp"
+                    android:background="@color/white"
+                    android:layout_weight="2"
+                    android:entries="@array/occurence"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/datetime"
+                android:layout_marginTop="280dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8sp">
+
+                <Button
+                    android:id="@+id/date_button"
+                    android:layout_width="0sp"
+                    android:background="@color/grey"
+                    android:layout_height="wrap_content"
+                    android:text="DATE"
+                    android:height="44dp"
+                    android:layout_weight="2"
+                    android:onClick="onDateClick" />
+
+                <Button
+                    android:id="@+id/time_button"
+                    android:layout_width="0sp"
+                    android:text="TIME"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/grey"
+                    android:layout_height="45dp"
+                    android:layout_weight="2"
+                    android:onClick="onTimeClick" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:padding="8sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/done"
+            android:text="Done"
+            android:background="@drawable/designnew"
+            android:layout_weight="2"
+            android:onClick="onDoneClick" />
+
+        <Button
+            style="@style/edit_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/cancel"
+            android:text="Cancel"
+            android:background="@drawable/designnew"
+            android:layout_weight="2"
+            android:onClick="onCancelClick" />
+
+    </LinearLayout>
+
+</LinearLayout>

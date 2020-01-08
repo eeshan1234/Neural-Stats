@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "970397916013",
+    "firebase_url": "https://neural-stats.firebaseio.com",
+    "project_id": "neural-stats",
+    "storage_bucket": "neural-stats.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970397916013:android:dd1cbb8c79b30042",
+        "android_client_info": {
+          "package_name": "com.example.sarthakmishra.neuralstats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970397916013-3jh4pednvcireh35b27v0j46hgurep6j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sarthakmishra.neuralstats",
+            "certificate_hash": "116f836280120fadfcb399afd59567a09f628200"
+          }
+        },
+        {
+          "client_id": "970397916013-3hu552h6d5td9t0cfkq9fvrvfkkvvbc7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaMpznDejoaTLHf9nP8u7xr1pdsc9ltoE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970397916013-v2ab19ab5umtb5b0dspkpd67uordcnob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

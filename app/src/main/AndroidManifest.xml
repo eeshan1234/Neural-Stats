@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sarthakmishra.neuralstats">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/finallogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/finallogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Signin" />
+        <activity android:name=".Logout" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".about" />
+        <activity android:name=".Doctor" />
+        <activity android:name=".Predictor" />
+        <activity android:name=".VoiceRecogActivity" />
+        <activity android:name=".Aggression" />
+        <activity android:name=".Depression" />
+        <activity android:name=".Anxiety" />
+        <activity android:name=".InternetAddiction" />
+        <activity android:name=".Psychosis" />
+        <activity android:name=".GamingAddiction" />
+        <activity android:name=".DescriptionAggression" />
+        <activity android:name=".DescriptionAnx" />
+        <activity android:name=".DescriptionGaming" />
+        <activity android:name=".DescriptionInternet" />
+        <activity android:name=".DescriptionPsychosis" />
+        <activity android:name=".DescriptionDepression" />
+        <activity android:name=".ImageSlider" />
+        <activity android:name=".reportdep" />
+        <activity android:name=".reportaggression" />
+        <activity android:name=".reportanxiety" />
+        <activity android:name=".reportGame" />
+        <activity android:name=".reportpsycho" />
+        <activity android:name=".reportinternet" />
+        <activity android:name=".Report" />
+        <activity android:name=".description_maleagg" />
+        <activity android:name=".description_toxic" />
+        <activity android:name=".DescriptionBorderline" />
+        <activity android:name=".DescriptionPanic" />
+        <activity android:name=".SARMbot" />
+        <activity android:name=".reportmaleaggress" />
+        <activity android:name=".reporttoxic" />
+        <activity android:name=".reportborderline" />
+        <activity android:name=".reportpanic" />
+        <activity android:name=".maleagg" />
+        <activity android:name=".toxic" />
+        <activity android:name=".borderline" />
+        <activity android:name=".panic" />
+        <activity
+            android:name=".EditAlarm"
+            android:label="Edit alarm" />
+        <activity
+            android:name=".AlarmNotification"
+            android:label="Alarm notification" />
+        <activity
+            android:name=".Preferences"
+            android:label="Preferences" />
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:process=":remote" />
+        <receiver android:name=".BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".reminder">
+
+        </activity>
+
+    </application>
+
+</manifest>

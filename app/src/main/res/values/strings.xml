@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Neural Stats</string>
+    <string name="signout">Sign-out</string>
+    <string name="About">About</string>
+    <string name="Help">Help</string>
+    <string name="contact">Contact Us</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_about">about</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Predictor</string>
+    <string name="title_voice">Voice</string>
+    <string name="title_doctor">Doctor</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="close">Close</string>
+    <string name="take_test">Take Test</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string-array name="occurence">
+        <item>Once</item>
+        <item>Weekly</item>
+    </string-array>
+
+    <string-array name="pref_alarm_play_time_entries">
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>3 minutes</item>
+        <item>5 minutes</item>
+    </string-array>
+
+    <string-array name="pref_alarm_play_time_values">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>300</item>
+    </string-array>
+    <string-array name="alert">
+      <item>ENGLISH</item>
+        <item>HINDI</item>
+        <item>KANNADA</item>
+        <item>TELUGU</item>
+
+    </string-array>
+</resources>

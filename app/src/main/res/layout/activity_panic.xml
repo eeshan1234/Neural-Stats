@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".panic"
+    android:background="@drawable/testdeptheme"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <RadioGroup
+            android:id="@+id/radioGrouppanic"
+            android:onClick="radiofnclickpanic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PanicQues1"
+            android:layout_marginTop="100dp"
+            >
+
+            <RadioButton
+                android:id="@+id/PanicQ1Opt1"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:background="@color/lightgrey"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                />
+
+            <RadioButton
+                android:id="@+id/PanicQ1Opt2"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:background="@color/lightgrey"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                />
+
+            <RadioButton
+                android:id="@+id/PanicQ1Opt3"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:background="@color/lightgrey"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                />
+
+            <RadioButton
+                android:id="@+id/PanicQ1Opt4"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:background="@color/lightgrey"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/PanicQues1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/PanicNextButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGrouppanic"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
+            android:background="@drawable/cast_expanded_controller_actionbar_bg_gradient_light"
+            android:text="Next"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+</ScrollView>
